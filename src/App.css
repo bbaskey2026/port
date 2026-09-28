@@ -1,0 +1,144 @@
+
+
+.payment-page {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.page-heading {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.page-description {
+  margin-top: 8px;
+}
+
+.status-toggle {
+  margin-bottom: 24px;
+}
+
+.payment-card {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+}
+
+.payment-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 40px;
+}
+
+.status-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.status-symbol svg {
+  font-size: 40px;
+}
+
+.payment-card--success .status-symbol {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.payment-card--pending .status-symbol {
+  background-color: #fff8e1;
+  color: #ed6c02;
+}
+
+.payment-card--failed .status-symbol {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.state-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status-message {
+  max-width: 550px;
+}
+
+.payment-reference {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.payment-reference span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.payment-reference strong {
+  font-size: 16px;
+}
+
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.footer-dot--success {
+  background-color: #2e7d32;
+}
+
+.footer-dot--pending {
+  background-color: #ed6c02;
+}
+
+.footer-dot--failed {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 600px) {
+  .payment-page {
+    padding: 24px 16px;
+  }
+
+  .payment-card-content {
+    padding: 28px 20px;
+  }
+
+  .status-toggle {
+    width: 100%;
+  }
+
+  .status-toggle .MuiToggleButton-root {
+    flex: 1;
+  }
+}
